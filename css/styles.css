@@ -42,7 +42,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 30, 48, 243;
+  --bs-primary-rgb: 255, 255, 255;
   --bs-secondary-rgb: 226, 30, 128;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -54,7 +54,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Plus Jakarta Sans";
+  --bs-font-sans-serif: "Montserrat";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -11731,4 +11731,13 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+}
+.scroller {
+  scroll-snap-type: mandatory;
+  /* scroll-snap-points-y: repeat(3rem); */
+  scroll-snap-type: y mandatory;
+}
+
+.scrollee {
+  scroll-snap-align: start;
 }

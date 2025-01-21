@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" class="scroller">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Icarus Bipropellant Liquid Rocket</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column h-100 bg-dark">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <section class="scrollee">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder">Ben Kamer's Portfolio</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Projects
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="projects.html">All Projects</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="icarus.html"><span style="font-weight: 600;">Liquid
+                                            Bipropellant Rocket</span></a>
+                                    <a class="dropdown-item" href="hts.html">Horizontal Rocket Engine Test Stand</a>
+                                    <a class="dropdown-item" href="rdre.html">Rotating Detonation Rocket Engine</a>
+                                    <a class="dropdown-item" href="hybrid.html">Small Hybrid Rocket Motor</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="bg-video"
+                style="position: absolute; width: 100%; height: 100vh; overflow: hidden; z-index: -1;">
+                <video autoplay muted loop preload="false" style="width: 100%; height: 100%; object-fit: cover;">
+                    <source src="assets/longDurHF.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <header class="d-flex align-items-center" style="height: 100vh;">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-xxl-5">
+                            <!-- Header text content-->
+                            <div class="text-center text-xxl-start">
+                                <h1 class="display-3 fw-normal text-primary"><span class="white d-inline">Icarus</span>
+                                </h1>
+                                <div class="fs-3 mb-4 fw-normal text-primary">A liquid bipropellant rocket</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="container text-center my-5"
+                style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 1;">
+                <div class="arrow"></div>
+                <i class="bi bi-chevron-double-down text-primary fade" style="font-size: 3rem;"></i>
+                </div>
+            </section>
+            <style>
+                .arrow {
+                    margin-top: 20px;
+                }
+
+                .fade {
+                    animation: fade 3s infinite;
+                }
+
+                @keyframes fade {
+
+                    0%,
+                    100% {
+                        opacity: 1;
+                    }
+
+                    50% {
+                        opacity: 0;
+                    }
+                }
+            </style>
+        </section>
+        <!-- All the text -->
+        <section class="scrollee" id="Text">
+            <!-- Project Overview -->
+            <section class="container-fluid px-5 py-5">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h1 class="text-primary mb-4">Project Overview</h1>
+                        <p class="text-white me-3" style="font-weight: 300;">Icarus is a liquid bipropellant rocket that
+                            runs on Nitrous Oxide and Isopropyl Alcohol. It produces a maximum of 2,500 pounds of
+                            thrust, and will fly in early March of 2025 to 26,000 feet. It is designed to be a minimum
+                            viable rocket to get the Boston University Rocket Propulsion Group off of the ground. Icarus
+                            was designed, built, and tested rapidly, going from the first element of design to tested in
+                            just over a year. A team of 25+ member work on Icarus, with tasks ranging from structural
+                            design to propulsion (my team) to custom electronics. When brought together, the result is
+                            pretty cool.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="assets/icarusHorz.jpg" alt="Icarus Hotfire" class="img-fluid">
+                        <p class="text-muted text-center mx-1 mt-2">Icarus horizontal and fully integrated for dry lab
+                            testing</p>
+                    </div>
+                </div>
+            </section>
+            <!-- My responsibility -->
+            <section class="container-fluid px-5 py-5">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="assets/redTeam.JPG" alt="Me and the red team" class="img-fluid">
+                        <p class="text-muted text-center mx-1 mt-2">Myself and the members of the closeout "red" team
+                            posing shortly before a successful long duration hotfire test.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="text-primary mb-4">My Role</h1>
+                        <p class="text-white me-3" style="font-weight: 300;">I serve as the responsible engineer and
+                            lead for all fluids and propulsion systems on the rocket. I lead 5+ members of the fluid and
+                            propulsion team, where collectively we design, build, test, and operate all fluid and
+                            propulsion components of the rocket. Additionally, during testing of the rocket, I serve as
+                            the test director, ensuring that all personnel are safe, all procedures are completed
+                            correctly, and that all test objectives are met. After tests, I verify all performance and
+                            test data and troubleshoot any issues related to performance of the rocket. Since the
+                            successful ground test campaign of the rocket wrapped up, I have been responsible for the
+                            final flight simulations of the rocket, to determine the likely landing location of the
+                            rocket, the maximum altitude, and various other key parameters for members of the team.
+                            Additionally, as an executive board member, I am one of 4 people who arrange all operations
+                            and logistics to get both the rocket and the team from Boston to the Mojave desert for
+                            launch.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Timeline and what my team has done -->
+            <section class="container-fluid px-5 py-5">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h1 class="text-primary mb-0">Timeline</h1>
+                        <h5 class="text-muted mb-5">And what my team has done</h5>
+                        <img src="assets/timandI.JPG" alt="Icarus Hotfire" class="img-fluid">
+                        <p class="text-muted text-center mx-1 mt-2">Myself and the avionics RE Tim conducting checkouts
+                            of the ground service equipment box during a test.</p>
+                        <img src="assets/icarusFire2.jpg" alt="Icarus Hotfire" class="img-fluid">
+                        <p class="text-muted text-center mx-1 mt-2">Action cam footage of Icarus during its successful
+                            long duration hotfire test.</p>
+                    </div>
+                    <div class="col-lg-8">
+                        <ul class="timeline">
+                            <li class="timeline-item">
+                                <h5 class="fw-bold text-primary">April 2023</h5>
+                                <p class="text-white">The first P&ID for the vehicle is created, and the tanks and domes
+                                    are designed, undergo a critical design review, and are sent out for manufacturing.
+                                </p>
+                            </li>
+                            <li class="timeline-item">
+                                <h5 class="fw-bold text-primary">May 2023</h5>
+                                <p class="text-white">My team begins design of all fluid components on the vehicle and
+                                    the ground service equipment, with cost and lead times as the driving factors. We
+                                    give ourselves a deadline of September to beging assembly.</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h5 class="fw-bold text-primary">September 2023</h5>
+                                <p class="text-white">Tanks are assembled, and hydrostatic tank proof tests are
+                                    conducted by myself and the rest of the fluids team. The tanks are verfied and
+                                    handed over to the structures team for intertank assembly.</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h5 class="fw-bold text-primary">October 2023</h5>
+                                <p class="text-white">The ground service equipment box components arrive and it is
+                                    assembled over the course of the month. In the mean time, the tanks are stacked and
+                                    the thrust structure is assembled.</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h5 class="fw-bold text-primary">February 2024</h5>
+                                <p class="text-white">The rocket is fully assembled and all fluids and propulsion
+                                    components are integrated in their ground test campaign configuration, and the
+                                    rocket is ready for testing.</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h5 class="fw-bold text-primary">March 2024</h5>
+                                <p class="text-white">The rocket undergoes an extensive test campaign including multiple
+                                    cold flows, which allow us to characterize the feed system.</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h5 class="fw-bold text-primary">November 2024</h5>
+                                <p class="text-white">Icarus undergoes a successful long duration hotfire. This
+                                    concludes the ground test campaign and the rocket is now ready for flight in early
+                                    March of 2025.</p>
+                            </li>
+                        </ul>
+                        <style>
+                            .timeline {
+                                list-style: none;
+                                padding: 0;
+                                position: relative;
+                            }
+
+                            .timeline::before {
+                                content: '';
+                                position: absolute;
+                                left: 20px;
+                                top: 0;
+                                bottom: 0;
+                                width: 4px;
+                                background: rgba(255, 255, 255, 0.7);
+                            }
+
+                            .timeline-item {
+                                position: relative;
+                                margin-bottom: 20px;
+                                padding-left: 40px;
+                            }
+
+                            .timeline-item::before {
+                                content: '';
+                                position: absolute;
+                                left: 14px;
+                                /* Adjusted to center the dots on the line */
+                                top: 0;
+                                transform: translateY(50%);
+                                width: 16px;
+                                height: 16px;
+                                border-radius: 50%;
+                                border: 4px solid white;
+                                background: #343a40;
+                            }
+                        </style>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container-fluid px-5 py-5">
+                    <div class="row">
+                        <h1 class="text-primary mb-5">More of my work on Icarus</h1>
+                        <div class="col-lg-4">
+                            <!-- Saved Data -->
+                            <img src="assets/rescuedTankPressure.png"
+                                alt="A fixed pressure reading from a damaged pressure transducer" class="img-fluid mb-2">
+                            <p class="text-muted text-center">During our long duration hotfire, the fuel tank pressure
+                                transducer encountered a soft short to ground, causing an erratic reading. Utilizing the
+                                pressure in the fuel plenum, some quick adiabatic tank drainage math, and some simple
+                                filtering, I was able to save the data from the test. For all tests, I complete a full
+                                data analysis of the test to identify fluid and propulsion system performace.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <!-- Flight simulation -->
+                            <img src="assets/flightPath.png" alt="The predicted flight path of Icarus"
+                                class="img-fluid mb-2">
+                            <p class="text-muted text-center">Following our long duration hotfire, I created a 6 degree
+                                of freedom simulation of the rocket using python, and found many parameters key to other
+                                members of the team. Additionally, I created Monte-Carlo simulations of the rocket to
+                                find an estimated landing region of the rocket.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <!-- GSE Box -->
+                            <img src="assets/gseBox.jpg" alt="The icarus ground service equipment box"
+                                class="img-fluid mb-2">
+                            <p class="text-muted text-center">The ground service equipment (GSE) box used to pressurize
+                                tanks, actuate main valves, purge the engine, and more. It was designed to fit within a
+                                compact pelican case for ease of transport, and allows rapid deploying of the system and
+                                the ability to test the system modularly, rapidly accelerating test operations. I
+                                defined all requirements for the system, conducted component selection, undertook all
+                                design work, and helped assemble and test the box.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="assets/QDs.jpeg" alt="Simple 3D printed quick disconnects" class="mb-2 img-fluid">
+                            <p class="text-muted text-center">As Icarus leaves the ground, it needs to release the
+                                propellant fill and pressurization lines behind. The quick disconnect was initially a
+                                pneumatic piston that actuated a traditional quick disconnect fitting. This design was
+                                incredibly overcomplicated, and involved moving parts which could be unpredictable in a
+                                moment where it just needs to work. So the solution was a 3D printed AN fitting, which
+                                would just snap from the motion of the rocket as it launches.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="assets/ignitionTimingCSV.jpg"
+                                alt="The excel worksheet I used to find the ignition timing for Icarus"
+                                class="img-fluid mb-2">
+                            <p class="text-muted text-center">To start Iron Lotus, Icarus' engine, the times of when the
+                                igniter goes off and when the fuel and oxidizer arrive are essential to a smooth engine
+                                startup. Utilizing data from cold flows, where only one propellant is sent through the
+                                fluids system, I was able to determine the ignition timing that successfully lit the
+                                engine, as can be seen from the video above.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="assets/IL.jpeg" alt="Iron Lotus Engine" class="img-fluid mb-2">
+                            <p class="text-muted text-center">The Iron Lotus engine integrated on the Icarus rocket, with routing bent and routed. I routed all tubing from the tanks to the engine, working around structural elements. I also sized all the tubes to accomidate the appropiate mass flow rate while balancing tube diameter and mass flow rate.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container-fluid px-5 py-5">
+                    <div class="row">
+                        <h1 class="text-primary mb-5">Lessons</h1>
+                        <div class="col-lg-4">
+                            <p class="text-white">Getting a rocket off of the drawing board is not an easy task. I could
+                                dream of ideal performance, with so many nice-to-haves, and just imagine it working
+                                immediately. In reality, there's always some issue in your build. One of the great
+                                lessons I've learned from Icarus is to just get the rocket to testing. Design, build,
+                                and test each component as soon as you can. Testing will find some issue, and it may
+                                undo all your hours spent optimizing. Finally, don't get stuck on one problem in the
+                                field. If you have the bandwidth, always work in parallel and reduce the time to your
+                                test. A test day always goes quicker than you think.</p>
+                            <p class="text-white">Getting to lead a team is one of the greatest privileges I've ever
+                                had, and getting to work with an amazing team on a project of this scale is nothing
+                                short of incredible. The incredibly talented, hardworking people who I have worked
+                                alongside on this project make the entire thing possible, and I am so grateful to be
+                                able to call them my team members.</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <img src="assets/wholeTeam.JPG" alt="A large porition of those who worked on Icarus"
+                                class="img-fluid">
+                            <p class="text-muted text-center ms-2">Some of the incredible people who have worked on
+                                Icarus. None of this would've been possible without their skill, perseverance, and
+                                enthusiasm.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="scrollee">
+            <!-- Footer-->
+            <footer class="bg-dark py-4 mt-auto">
+                <div class="container px-5">
+                    <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                        <div class="col-auto">
+                            <div class="small text-primary m-0">Ben Kamer's Portfolio</div>
+                        </div>
+                        <div class="col-auto">
+                            <a class="small" href="mailto:bkamer@bu.edu">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
