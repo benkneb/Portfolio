@@ -152,6 +152,61 @@
                                 Solidworks.</p>
                         </div>
                     </div>
+                    <!-- Solidworks Motion -->
+                    <div class="row mt-5">
+                        <div class="col-lg-6">
+                            <h2 class="fw-normal text-primary">Motorized Cart with 80/20 as cargo</h2>
+                            <p class="text-primary">The first major project in this class was to design, build,
+                                simulate, and code a cart that is able to take a vertical 1 foot tall bar of 80/20
+                                forward and backwards at the maximum speed possible with no added restraints.
+                            </p>
+                            <p class="text-primary">The cart utilizes an Arduino Uno, a L298N motor driver, and a DC
+                                motor with an encoder attached. The structure of the cart was designed and lasercut,
+                                with the axle mounts and wheels being 3D printed. There is also a fun easter egg on the
+                                cart, which is a 3D scan of one of our group members, Trent, sitting on the side of the
+                                cart.
+                            </p>
+                            <p class="text-primary">To find the max acceleration the cart could do without causing the
+                                bar to topple, a solidworks motion study was employed. The cart would move back and
+                                forth, and the resultant force on the edge of the bar would be shown. From basic
+                                mechanics, we know that the onset of tipping occurs when the normal force on the bar can
+                                no longer offset the moment caused by other forces on the 80/20. Adjusting the values
+                                within the solidworks motion study, we can also plot the acceleration of the cart, which
+                                allows us to determine the actual acceleration of our cart.</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="assets/360cartCad.png" alt="Cart of the CAD" class="img-fluid">
+                            <p class="text-muted text-center mx-1 mt-2">The design of the cart in Solidworks</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="assets/360Cart.jpg" alt="The cart without 80/20 installed" class="img-fluid">
+                            <p class="text-muted text-center mx-1 mt-2">The cart without 80/20</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <img src="assets/360CartForce.png" alt="Reaction force on the 80/20 bar"
+                                        class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <img src="assets/360CartAccel.png" alt="Acceleration of the cart" class="img-fluid">
+                                </div>
+                            </div>
+                            <p class="text-primary">With the resulting acceleration values, we created code that
+                                utilized a proportional response to ensure that the acceleration was always closesly
+                                folllowing the simulation value. The initial revision of the code worked quite well,
+                                except that it would overshoot the distance we told the cart to travel. After adjusting
+                                some tuning values in the code and updating the way the cart counted the distance it
+                                traveled, we were able to have the cart travel both 10 feet and 5 feet accurately and
+                                quickly.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="assets/360cartMove.gif" alt="The cart in motion" class="img-fluid">
+                            <p class="text-muted text-center mx-1 mt-2">The cart in motion</p>
+                        </div>
+
+                    </div>
+
         </section>
         </div>
     </main>
