@@ -206,11 +206,50 @@
                         </div>
 
                     </div>
+                    <!--- 2.5 DOF System -->
+                    <div class="row mt-5">
+                        <div class="col-lg-6">
+                            <h2 class="fw-normal text-primary">2.5 DOF System</h2>
+                            <p class="text-primary">The final project in this class was to design, build, and program a
+                                2.5 degree of freedom system. The rest of the project was up to our group's discretion.
+                                We decided to build a zen sand board, which moved a metal ball around a flat layer of
+                                sand in order to draw designs.
+                            </p>
+                            <p class="text-primary">The sand board utilizes a Makerbase MKS Base control board to drive
+                                3 stepper motors, 2 of which are used to move the X axis, and one of which drives the Y
+                                axis. Additionally, an end effector which holds a magnet is raised and lowered utilizing
+                                a small high torque servo motor. This allows for completely independant drawing, where
+                                the ball is returned to a home position after each drawing complete, and is picked up
+                                shortly before each drawing.
+                            </p>
+                            <p class="text-primary">The sandboard utilizes PrusaSlicer and Repetier Host to print
+                                designs. It starts by running a custom gcode which retrieves the ball, and ensures that
+                                the end effector does not crash into the sand box supports, then after running the
+                                design, runs an additional custom gcode which returns the ball to its designated parking
+                                spot, then homes and places the end effector in a safe state and location. Because of
+                                the use of PrusaSlicer, the sandboard is able to draw almost any shape as long as it is
+                                able to be stored as a 3D or 2D geometry file, such as a STL or SVG.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="assets/sandboard.gif" alt="The sand board drawing a spiral" class="img-fluid">
+                            <p class="text-muted text-center">The sand board drawing a spiral</p>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="assets/360BUdraw.jpeg" alt="The sand board" class="img-fluid">
+                                <p class="text-muted text-center">The sand board with BU drawn</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img src="assets/sandboardSide.jpg" alt="The sand board from the side" class="img-fluid">
+                                    <p class="text-muted text-center">The sand board from the side</p>
+                        </div>
+                        
 
         </section>
         </div>
     </main>
-    <footer class="bg-dark py-4 mt-auto">
+    <footer class=" bg-dark py-4 mt-auto">
         <div class="container px-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                 <div class="col-auto">
